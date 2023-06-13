@@ -1,38 +1,343 @@
-.App {
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav_style a {
+  text-decoration: none;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  color: #055992;
+}
+
+.nav_style a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.background_Video {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.background_Video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-position: center;
+  background-size: contain;
+}
+
+.background_Video h1 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  margin-top: 8%;
+  color: #055992;
+  font-size: 32px;
+  font-family: "PT Serif", serif;
+}
+
+.containerCircles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 8%;
+}
+
+.rowOne {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rowTwo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.picInsideCirOne,
+.picInsideCirTwo {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 55%;
+}
+
+.picInsideCirOne img,
+.picInsideCirTwo img {
+  min-width: 60%;
+  min-height: 60%;
+  border-radius: 50%;
+}
+
+.circle:nth-child(6n + 1) {
+  background-color: #fdbbc0;
+}
+
+.circle:nth-child(6n + 2) {
+  background-color: #e0f0ea;
+}
+
+.circle:nth-child(6n + 3) {
+  background-color: #f9caf0;
+}
+
+.circleGroup:nth-child(2n + 1) {
+  background-color: #fee2e6;
+}
+
+.circleGroup:nth-child(2n + 2) {
+  background-color: #fee2e6;
+}
+
+.textUnderCircle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.textUnderCircle p {
+  color: #2674bc;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  min-width: 100%;
+  margin-top: -10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 12%;
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.backgroundAboutRose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #feeff18a;
+  min-width: 100%;
+  min-height: 840px;
+}
+
+.backgroundAboutMint {
+  background-color: #e0f0ea;
+  min-height: 500px;
+  width: 80%;
+  padding: 0 20px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutPhoto {
+  padding: 30px 0px 30px 0px;
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+.aboutText {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 60%;
+  padding: 30px 30px 30px 30px;
+}
+
+.aboutText h2 {
+  color: #dc000e;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.aboutText p {
+  color: #246ea0;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.aboutText button {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
   color: white;
+  background-color: #18a0fb;
+  border-radius: 6px;
+  border: none;
+  padding: 15px;
+  width: 50%;
+  margin-top: 4%;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundAboutDotted {
+  margin-top: -15%;
+  right: 82%;
+  position: absolute;
+  width: auto;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.backgroundAboutCirclePink {
+  position: absolute;
+  right: -3px;
+  top:50px;
+  transform: translate(0%, -90%) rotate(180deg);
+}
+
+.backgroundAboutCircleMint {
+  position: absolute; 
+  transform: translate(-50%, -50%);
+  top:105%;
+  right: 90%;
+  z-index: 1;
+}
+
+.myGalleryCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 8%;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: #e0f0ea;
+  min-width: 70%;
+  height: 150px;
+}
+
+.head h1 {
+  color: #2674bc;
+  font-family: "PT Serif";
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  margin-right: 25%;
+}
+
+.decorGallery {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.CircleMint {
+  background-image: url(./images/MintCircle.png);
+  width: 200px;
+  height: 200px;
+}
+.PinkCircle {
+  position: absolute;
+  background-image: url(./images/PinkCircle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  transform: rotate(120deg);
+}
+.dottedLineGal {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/dottedLineGal.png);
+  margin-left: -160px;
+  width: 180%;
+  height: 150%;
+}
+.galleryPhotos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 5%;
+}
+
+.galleryPhotos img {
+  width: 100%;
+  height: auto;
+}
+.patch {
+  justify-content: center;
+  background-image: url(./images/dots.png);
+}
+
+@media screen and (max-width: 480px) {
+
+  .backgroundAboutCirclePink,  
+  .backgroundAboutCircleMint,
+  .line{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media screen and (max-width: 780px) {
+
+  .backgroundAboutCirclePink,  
+  .backgroundAboutCircleMint,
+  .line{
+    display: none;
   }
+
 }
